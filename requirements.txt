@@ -1,7 +1,6 @@
 gTTS==2.2.2
 git+https://github.com/nftstorage/python-client.git
 nltk==3.8.1
-pafy==0.5.5
 pdf2image==1.16.3
 pdfminer3==2018.12.3.0
 Pillow==9.5.0
@@ -17,4 +16,4 @@ streamlit_tags==1.2.8
 streamlit_wallet_connect==0.0.9
 w3storage==0.0.1
 pandas
-https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.2.0/en_core_web_sm-2.2.0.tar.gz
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.5/en_core_web_sm-2.3.5.tar.gz

@@ -2,7 +2,7 @@ import streamlit as st
 import nltk
 import spacy
 import subprocess
-subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
+subprocess.run(["python3.9", "-m", "spacy", "download", "en_core_web_sm"])
 nltk.download('stopwords')
 spacy.load('en_core_web_sm')
 import pandas as pd
@@ -17,7 +17,6 @@ from pdfminer3.converter import TextConverter
 import io, random
 from streamlit_tags import st_tags
 from PIL import Image
-import pafy
 import plotly.express as px
 
 
@@ -86,9 +85,6 @@ interview_videos = ['https://youtu.be/Ji46s5BHdr0','https://youtu.be/seVxXHi2YMs
                     'https://youtu.be/DQd_AlIvHUw','https://youtu.be/oVVdezJ0e7w'
                     'https://youtu.be/JZK1MZwUyUU','https://youtu.be/CyXLhHQS3KY']
 
-def fetch_yt_video(link):
-    video = pafy.new(link)
-    return video.title
 
 
 def get_table_download_link(df, filename, text):
