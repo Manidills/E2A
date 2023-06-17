@@ -108,7 +108,7 @@ if action == "Eaudio Maker":
                 ipfs_gateway = 'https://ipfs.moralis.io'
 
                 # Concatenate the IPFS gateway URL with the CID
-                new_url = f'{store_date[0]["path"]}'
+                new_url = f"https://ipfs.moralis.io/ipfs/{store_date}"
                 st.write(f'Can download/view data from {new_url}')
             elif genre == 'NFTPORT':
                 store_data = nft_port(temp.name)
