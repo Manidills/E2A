@@ -1,6 +1,4 @@
 import base64
-from email.mime import audio
-import imp
 import io
 import os
 from urllib import request
@@ -106,7 +104,7 @@ if action == "Eaudio Maker":
                 new_url = f'https://{audio_cid}.ipfs.nftstorage.link'
                 st.write(f'Can download/view data from {new_url}')
             elif genre == 'Moralis/Pinata':
-                store_date = store_on_ipfs(audio_file.getvalue())
+                store_date = store_on_ipfs(temp.name)
                 ipfs_gateway = 'https://ipfs.moralis.io'
 
                 # Concatenate the IPFS gateway URL with the CID
