@@ -1,5 +1,4 @@
 gTTS==2.2.2
-moralis==0.1.25
 git+https://github.com/nftstorage/python-client.git
 nltk==3.8.1
 pafy==0.5.5

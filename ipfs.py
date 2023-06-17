@@ -1,8 +1,6 @@
 import w3storage
-from moralis import evm_api
 import base64
 import requests
-#from lighthouseweb3 import Lighthouse
 
 
 
@@ -23,22 +21,22 @@ def w3_store(File):
 
 api_key = "7hstobdqT97qzSbNkW6Spq227cMCBXEPsKBAM7yk70Wqhiygi3uHD7snLqupcL46"
 
-def store_on_ipfs(knn_template):
+def store_on_ipfs(file):
 
-    encoded_content = base64.b64encode(knn_template).decode('utf-8')
+    file = open(file, "rb")
 
-    body = [{
-        "path": f'dummy',
-        "content": encoded_content,
-    }]
+    try:
+        content = base64.b64encode(file).decode('utf-8')
+    except:
+        content = base64.b64encode(file.read()).decode('utf-8')
 
-    cid = evm_api.ipfs.upload_folder(
-        api_key=api_key,
-        body=body,
+    response = requests.post(
+        "https://deep-index.moralis.io/api/v2/ipfs/uploadFolder",
+        headers={"X-API-Key": api_key},
+        json=[{"path": f"dummy", "content": content}],
     )
-
-    print(cid)
-    return cid
+    path = response.json()[0]['path']
+    return path.split("/ipfs/")[-1]
 
 def nft_port(file):
     file = open(file, "rb")
@@ -59,8 +57,8 @@ def lighthouse(file):
         files={"file": file}
     )
 
-    return response\
-    
+    return response
+
 def estuary(file):
     file = open(file, "rb")
     response = requests.post(

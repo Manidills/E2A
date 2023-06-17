@@ -73,11 +73,11 @@ def ask(wallet):
                 new_url = f'https://{audio_cid}.ipfs.nftstorage.link'
                 st.write(f'Can download/view data from {new_url}')
             elif genre == 'Moralis/Pinata':
-                store_date = store_on_ipfs(response)
+                store_date = store_on_ipfs(temp.name)
                 ipfs_gateway = 'https://ipfs.moralis.io'
 
                 # Concatenate the IPFS gateway URL with the CID
-                new_url = f'{store_date[0]["path"]}'
+                new_url = f"https://ipfs.moralis.io/ipfs/{store_date}"
                 st.write(f'Can download/view data from {new_url}')
             elif genre == 'NFTPORT':
                 store_data = nft_port(temp.name)
