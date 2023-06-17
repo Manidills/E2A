@@ -17,3 +17,4 @@ streamlit_tags==1.2.8
 streamlit_wallet_connect==0.0.9
 w3storage==0.0.1
 pandas
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.2.0/en_core_web_sm-2.2.0.tar.gz
