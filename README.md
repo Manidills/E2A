@@ -20,7 +20,7 @@
 
 **Documents are an indispensable part of our daily lives, essential for the smooth operation of various industries. While numerous tools like pdf2docx, smallpdf, ilovepdf, etc., are available for converting formats and correcting grammar, there seems to be a significant gap when it comes to efficiently analyzing and extracting valuable data from large documents. The need for a tool that addresses this specific requirement has become increasingly crucial in today's fast-paced world.**
 
-The project aims to provide a comprehensive solution for converting documents or ebooks to audio, analyzing documents, and facilitating question and answering on the extracted data. The extracted data is saved to an IPFS (InterPlanetary File System) service such as **Moralis/pinata, nftport, nft storage, web3 storage, light house, estursay**. IPFS is a decentralized and distributed file system that offers numerous benefits such as content addressing, data immutability, and censorship resistance.
+The project aims to provide a comprehensive solution for converting documents or ebooks to audio, analyzing documents, and facilitating question and answering on the extracted data. The extracted data is saved to an IPFS (InterPlanetary File System) service such as **Moralis/pinata, nftport, nft storage, web3 storage, light house, estuary**. IPFS is a decentralized and distributed file system that offers numerous benefits such as content addressing, data immutability, and censorship resistance.
 
 By leveraging the power of IPFS, this project not only provides advanced features but also addresses the day-to-day challenges faced by people in managing and accessing information. Whether you are a student, professional, or simply someone who wants to consume content more efficiently, our project offers a range of functionalities that can significantly enhance your experience.
 
@@ -65,9 +65,9 @@ web3.storage is an IPFS-based storage solution built specifically for decentrali
 
 Light House is a decentralized data storage service that leverages IPFS to provide reliable and scalable storage solutions. It offers a simple and intuitive interface for uploading, retrieving, and managing files on the IPFS network. Light House focuses on ease of use, making it accessible to developers and users who want to benefit from the advantages of IPFS without complex configurations.
 
-### 6. Estursay
+### 6. Estuary
 
-Estursay is a feature-rich IPFS service that aims to make decentralized storage accessible to developers and businesses. It provides secure and reliable storage for files, ensuring data integrity and availability. Estursay offers various APIs and integrations that simplify the process of utilizing IPFS in applications, enabling developers to focus on building innovative solutions.
+Estuary is a feature-rich IPFS service that aims to make decentralized storage accessible to developers and businesses. It provides secure and reliable storage for files, ensuring data integrity and availability. Estursay offers various APIs and integrations that simplify the process of utilizing IPFS in applications, enabling developers to focus on building innovative solutions.
 
 These IPFS services play a crucial role in our project, providing secure, decentralized, and permanent storage solutions for the extracted data. By utilizing the features and benefits of IPFS, we ensure that the data processed by our project remains accessible, verifiable, and resistant to censorship.
 
