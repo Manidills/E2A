@@ -33,6 +33,24 @@ By leveraging the power of IPFS, this project not only provides advanced feature
 1. Documents/Ebooks to Audio Converter
 Transform your text-based documents and ebooks into audio format effortlessly. Our platform utilizes advanced text-to-speech technology to provide an accessible and immersive experience, allowing users to listen to their favorite books, documents, or articles.
 
+It do come APIs as a Service.. any can use this function with api to convert ther **ebook to audiobook**. We stored N number of audiobooks already in our collection, user can easyly get use of it. Links to the ebook and audio books comes with IPFS links beacuse all get stored with the help of **NFT storage and Lighthouse**
+
+                                  1. GET Collections
+                                  http://audiobook-converter-python.onrender.com/api/audiobook?start=0&limit=5
+
+                                  2. ADD audiobooks ( pass audiobook in body )
+                                  http://audiobook-converter-python.onrender.com/api/audiobook
+
+                                  3. Convert ebooks to audiobooks
+                                  https://audiobook-converter-python.onrender.com/api/audiobook/convert
+
+                                  4. Get audiobook
+                                  http://audiobook-converter-python.onrender.com/api/audiobook/{{audiobook_id}}
+
+                                  5. UPDATE book details
+                                  http://audiobook-converter-python.onrender.com/api/audiobook/{{audiobook_id}}
+
+
 2. Document Analyzer
 Gain valuable insights from your documents using our Document Analyzer feature. It employs powerful natural language processing algorithms to extract key information, analyze sentiment, detect entities, and generate summaries. With this functionality, users can quickly grasp the essence of their documents without spending excessive time reading through them.
 
